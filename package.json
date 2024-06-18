@@ -14,5 +14,14 @@
     "monitor",
     "unity"
   ],
-  "dependencies": {}
+  "dependencies": {},
+  "_upm": {
+    "changelog": "### Fixed\n- Fixed a performance issue when the addon was stopped.\n\n### Added\n- Initial version of the Overdraw Monitor."
+  },
+  "documentationUrl": "https://your-documentation-url.com",
+  "repository": {
+    "url": "https://github.com/FairplexVR/OverdrawMonitor.git",
+    "type": "git",
+    "revision": "YOUR-GIT-REVISION"
+  }
 }
