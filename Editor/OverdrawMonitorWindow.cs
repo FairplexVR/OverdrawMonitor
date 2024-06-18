@@ -56,7 +56,7 @@ public class OverdrawMonitorWindow : EditorWindow
         monitors = GetAllMonitors();
         foreach (Camera activeCamera in activeCameras)
         {
-            if (!Array.Exists(monitors,m => m.targetCamera == activeCamera))
+            if (!Array.Exists(monitors, m => m.targetCamera == activeCamera))
             {
                 var monitor = _monitorsGo.AddComponent<CameraOverdrawMonitor>();
                 monitor.SetTargetCamera(activeCamera);
@@ -152,7 +152,10 @@ public class OverdrawMonitorWindow : EditorWindow
             GUILayout.Label("Available only in Play mode");
         }
 
-        Repaint();
+        if (isEnabled)
+        {
+            Repaint();
+        }
     }
 
     void ResetStats()
